@@ -10,7 +10,7 @@ class Header extends Component {
     return (
       <div>
         <Title title={this.props.title}/>
-        <input onChange={this.handleChange.bind(this)}/>
+        <input value={this.props.title} onChange={this.handleChange.bind(this)}/>
       </div>
     );
   }
